@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  db:
+    image: postgres:16
+    networks:
+      - db
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: geom
+      POSTGRES_USER: geom
+      POSTGRES_DB: geom
+    restart: unless-stopped
+
+networks:
+  db:
+    driver: bridge
+    
+volumes:
+  postgres-data:

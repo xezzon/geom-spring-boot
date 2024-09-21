@@ -1,0 +1,27 @@
+version: '3'
+
+includes:
+  - ./docker-compose-infra.yml
+
+services:
+  app:
+    container_name: javadev
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      JDBC_TYPE: postgresql
+      SPRING_ENVIRONMENT: dev
+      DB_URL: db:5432/geom
+      DB_USERNAME: geom
+      DB_PASSWORD: geom
+    networks:
+      - app
+      - db
+    volumes:
+      - ../..:/workspaces:cached
+    command: sleep infinity
+
+networks:
+  app:
+    driver: bridge
