@@ -5,7 +5,6 @@ import cn.hutool.crypto.digest.BCrypt;
 import com.auth0.jwt.JWTCreator.Builder;
 import io.github.xezzon.geom.auth.util.SecurityUtil;
 import io.github.xezzon.geom.common.exception.InvalidTokenException;
-import io.github.xezzon.geom.crypto.domain.JwtClaimWrapper;
 import io.github.xezzon.geom.crypto.service.JwtCryptoService;
 import io.github.xezzon.geom.user.domain.User;
 import io.github.xezzon.geom.user.service.IUserService4Auth;

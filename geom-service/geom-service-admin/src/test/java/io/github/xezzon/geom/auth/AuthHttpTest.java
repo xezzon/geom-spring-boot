@@ -17,7 +17,6 @@ import io.github.xezzon.geom.InitializeDataRunner;
 import io.github.xezzon.geom.auth.domain.BasicAuth;
 import io.github.xezzon.geom.common.config.GeomConfig;
 import io.github.xezzon.geom.common.exception.ErrorCode;
-import io.github.xezzon.geom.crypto.domain.JwtClaimWrapper;
 import io.github.xezzon.geom.crypto.service.KeyLoader;
 import io.github.xezzon.geom.user.domain.User;
 import io.github.xezzon.geom.user.repository.UserRepository;

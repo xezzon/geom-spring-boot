@@ -1,10 +1,9 @@
-package io.github.xezzon.geom.crypto.domain;
+package io.github.xezzon.geom.auth;
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.JWTCreator;
 import com.auth0.jwt.JWTCreator.Builder;
 import com.auth0.jwt.interfaces.DecodedJWT;
-import io.github.xezzon.geom.auth.JwtClaim;
 import io.github.xezzon.tao.trait.Into;
 import io.github.xezzon.tao.trait.NewType;
 
